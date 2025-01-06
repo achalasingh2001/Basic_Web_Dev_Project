@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Animation_2</title>
+    <style>
+        div
+        {
+            height: 100px;
+            width: 100px;
+            border: 2px solid red;
+            border-radius:50%;
+            animation-name: moving;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        body
+        {
+            background-color: aqua;
+        }
+        @keyframes moving {
+            0%,100%
+            {
+                top: 0px;
+                left: 0px;
+                background-color: blue;
+                position: relative;
+            }
+           25%
+            {
+                top: 0px;
+                left: 400px;
+                background-color: yellow;
+                position: relative;
+            }
+            50%
+            {
+                top: 400px;
+                left: 400px;
+                background-color:chocolate;
+                position: relative;
+            }
+            75%
+            {
+                top: 400px;
+                left: 0px;
+                background-color: blue;
+                position: relative;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

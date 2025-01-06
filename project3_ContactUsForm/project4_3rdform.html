@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Contact Us</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            /* justify-content and align item will work if dispaly is flex*/
+            justify-content: center;
+            /* used to center the black color container in middle horizontaly*/
+            align-items: center;
+            /* used to center the black container in middle vertically*/
+            background: linear-gradient(150deg, #ED3EF7 24%, #7546ee 100%);
+            /* liner-gradient is used to give mixed color background*/
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* used to change to font style of text*/
+        }
+
+        .container {
+            width: 50%;
+            height: 80%;
+            border-radius: 20px;
+            padding: 20px;
+            color: azure;
+            background-color: #282829;
+        }
+
+        .heading {
+            display: flex;
+            justify-content: center;
+        }
+
+        .heading span {
+            font-size: 30px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            height: 70px;
+        }
+
+        .required {
+            color: red;
+        }
+
+        .fullname-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            height: 35px;
+            border-radius: 30px;
+            border: none;
+        }
+
+        textarea {
+            height: 80px;
+        }
+
+        span {
+            margin-bottom: 5px;
+            font-size: 20px;
+            display: flex;
+        }
+
+        label {
+            margin-left: 10px;
+        }
+
+        .first
+        .last {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin: 10px;
+        }
+
+        .save-container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .save-container div {
+            padding: 10px 20px;
+            border-radius: 20px;
+            background-color: rgb(196, 50, 50);
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="heading">
+            <span>Contact Us</span>
+        </div>
+        <form class="form-container">
+            <div class="fullName">
+                <span>Full Name<p class="required">*</p></span>
+                <div class="fullname-container">
+                    <div class="first">
+                        <input type="text" id="fname" name="fname" required>
+                        <label for="fname">First</label>
+                    </div>
+                    <div class="last">
+                        <input type="text" id="lname" name="lname" required>
+                        <label for="lname">Last</label>
+                    </div>
+                </div>
+            </div>
+            <div class="Email">
+                <span>Email<p class="required">*</p></span>
+                <div>
+                    <input type="text" id="fname" name="fname" required>
+                </div>
+            </div>
+            <div class="comment">
+                <span>Leave us a few words<p class="required">*</p></span>
+                <div>
+                    <textarea name="comment" id="comment"></textarea>
+                </div>
+            </div>
+            <div class="save-container">
+                <div>
+                   Submit
+                </div>
+            </div>
+        </form>
+       
+    </div>
+
+</body>
+
+</html>

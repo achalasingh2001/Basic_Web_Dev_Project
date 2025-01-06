@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>z-index</title>
+    <style>
+        .container{
+            position: relative;
+            width: 200px;
+            top: 200px;
+            left: 200px;
+            /* margin: 100px auto; */
+        }
+        .item{
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            transition: all ease 2s;
+            top: 0px;
+            left: 0px;
+
+        }
+        .one{
+            background-color: red;
+        }
+        .two{
+            background-color:green;
+        }
+        .three{
+            background-color:blue;
+        }
+        .four{
+            background-color:yellowgreen;
+        }
+        .container:hover .one 
+        {
+           transform: translatex(200px) rotate(180deg);
+        }
+
+        .container:hover .two 
+        {
+          transform: translatex(-200px) rotate(180deg);
+        }
+
+        .container:hover .three {
+           transform: translatey(200px) rotate(180deg);
+        }
+        .container:hover .four {
+            transform: translatey(-200px) rotate(180deg);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item one">1</div>
+        <div class="item two">2</div>
+        <div class="item three">3</div>
+        <div class="item four">4</div>
+        
+    </div>
+</body>
+</html>

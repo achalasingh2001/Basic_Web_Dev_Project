@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <
+    <title>grid concept</title>
+    <style>
+        .container
+        {
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            grid-template-rows: auto;
+            border: 2px solid black;
+            height: 400px;
+            gap: 20px;
+            width: 1000px;
+            padding: 20px 30px;
+        }
+        .items
+        {
+            background-color: aqua;
+            color:black;
+        }
+        .one
+        {
+            grid-column: 1/2;
+            grid-row: 1/3;
+        }
+       
+       
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items one">item-1</div>
+        <div class="items two">item-2</div>
+        <div class="items three">item-3</div>
+        <div class="items four">item-4</div>
+        <div class="items five">item-5</div>
+        
+    </div>
+</body>
+</html>
